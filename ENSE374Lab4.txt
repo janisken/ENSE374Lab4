@@ -1,0 +1,32 @@
+3.1 Overview
+
+This software will create a virtual environment, in java language, in which animals will live within and interact with each other. External 
+forces cannot affect the system that is created, and there is no reproducing of any kind. Eventually, every animal will die. Each animal
+will be broken down into their respective animal categories, from animals with wings to without wings and insects. This is a new design that
+will run on a personal computer. 
+
+
+3.2 Subsystem Decomposition
+
+The UML diagram that is created for this virtual environment is the Design Layout.class.violet.html file created. It starts off with the world
+created, followed by all the animals, which all need to eat every 2 days. It then splits off, with three sub classes, which inherit from animals.
+
+Animals with Wings is the first, and they can travel 5 kms per day. There are two types of animals with wings that inherit from the former class,
+the Hawk and the Bluejay. The hawk feeds off of mice and squirrels, while the bluejay eats catterpillars, trees/shrubs and grasshoppers.
+
+Animals without Wings is the second, and they can travel 3 kms per day. There are six types of animals without wings that inherit from this
+class, including mice, squirrels, rabbits, deer, foxes and wolves. Mice can eat grass, and trees/shrubs. Squirrels can eat trees/shrubs. Rabbits
+can eat grass. Deer can eat grass, trees/shrubs. Foxes eat bluejays, mice, squirrels, and rabbits. Wolves can eat rabbits and deer.
+
+Insects is the third and final class inheriting from the animals class, that can travel 1 km per day. They encompass the catterpillar, which can
+eat trees/shrubs, and the grasshopper, which eats grass.
+
+This hierarchy is the design chosen for this software program.
+
+
+3.7 Boundary Conditions
+
+This program will allow the user to create the world by populating it with animals. Boundary conditions for this program will include not 
+allowing the users to input too many animals into the system. We don't want the system to be too crowded, or else it could cause some issues
+with the software and the way the code ensures proper interaction between each animal. We should also ensure a diversity of animals to be
+placed into the world, allowing for better interactions between the animals.

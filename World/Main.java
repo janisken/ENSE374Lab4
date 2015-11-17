@@ -4,21 +4,24 @@ public class Main{
 	
 	public static void main(String [] args)
 	{
+		//Creation of a new world
 		World newWorld = new World();
 
-		newWorld.populateTreesShrubs();
-		newWorld.populateGrass();
-		newWorld.populateCaterpillar();
-		newWorld.populateGrasshopper();
-		newWorld.populateDeer();
-		newWorld.populateBluejay();
-		newWorld.populateSquirrel();
-		newWorld.populateMouse();
-		newWorld.populateRabbit();
-		newWorld.populateHawk();
-		newWorld.populateFox();
-		newWorld.populateWolf();
+		//Adding everything into the world
+		newWorld.treesShrubsToWorld();
+		newWorld.grassToWorld();
+		newWorld.caterpillarToWorld();
+		newWorld.grasshopperToWorld();
+		newWorld.deerToWorld();
+		newWorld.bluejayToWorld();
+		newWorld.squirrelToWorld();
+		newWorld.mouseToWorld();
+		newWorld.rabbitToWorld();
+		newWorld.hawkToWorld();
+		newWorld.foxToWorld();
+		newWorld.wolfToWorld();
 
+		//Printing out the world onto the console
 		newWorld.printWorld();
 	}
 }

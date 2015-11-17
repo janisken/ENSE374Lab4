@@ -1,8 +1,11 @@
 import java.util.*;
 
 public class Location{
+	
+	//ArrayList is created of type Animals to have a list of the Animals added
 	private ArrayList <Animals> list = new ArrayList <Animals>();
 	
+	//Adders for each of the flora, with the array add, called with a constructor
 	public void addGrass(int canMove)
 	{
 		list.add(new Grass(canMove));
@@ -14,7 +17,8 @@ public class Location{
 		list.add(new TreesShrubs(canMove));
 		return;
 	}
-
+	
+	//Adders for each of the animals, with the array add, called with a constructor
 	public void addCaterpillar(int canMove)
 	{
 		list.add(new Caterpillar(canMove));
@@ -75,11 +79,12 @@ public class Location{
 		return;
 	}
 
+	//Print function, taking the list from all the animals and getting the correct type
 	public void print(int i, int j)
 	{
 	    for (Animals tempList : list)
 	    {
-	        System.out.println(i + ", " + j + " contains a " + tempList.getAnimalType()); 
+	        System.out.println(tempList.getAnimalType() + " in location " + i + ", " + j); 
 	    }
 	}
 }

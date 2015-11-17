@@ -2,9 +2,13 @@ import java.util.*;
 
 public class World{
 	
+	//size of the world
 	private static int squareKM = 150;
+	
+	//2D array is created for the environment, ensuring a location is created for each squareKM
 	private Location[][] environment = new Location[squareKM][squareKM];
 	
+	//World constructor, creating a new location per squareKM
 	public World()
 	{
 		for(int i = 0; i < squareKM; i++)
@@ -17,7 +21,8 @@ public class World{
 		return;
 	}
 
-	public void populateWolf()
+	//Adding all of the animals and flora to the world with the adders from Location
+	public void wolfToWorld()
 	{
 		for(int i = 0; i < 30; i++)
 		{
@@ -28,7 +33,7 @@ public class World{
 		}
 	}
 
-	public void populateFox()
+	public void foxToWorld()
 	{
 		for(int i = 0; i < 30; i++)
 		{
@@ -39,7 +44,7 @@ public class World{
 		}
 	}
 
-	public void populateHawk()
+	public void hawkToWorld()
 	{
 		for(int i = 0; i < 30; i++)
 		{
@@ -50,7 +55,7 @@ public class World{
 		}
 	}
 
-	public void populateRabbit()
+	public void rabbitToWorld()
 	{
 		for(int i = 0; i < 30; i++)
 		{
@@ -61,7 +66,7 @@ public class World{
 		}
 	}
 
-	public void populateMouse()
+	public void mouseToWorld()
 	{
 		for(int i = 0; i < 30; i++)
 		{
@@ -72,7 +77,7 @@ public class World{
 		}
 	}
 
-	public void populateSquirrel()
+	public void squirrelToWorld()
 	{
 		for(int i = 0; i < 30; i++)
 		{
@@ -83,7 +88,7 @@ public class World{
 		}
 	}
 
-	public void populateBluejay()
+	public void bluejayToWorld()
 	{
 		for(int i = 0; i < 30; i++)
 		{
@@ -94,7 +99,7 @@ public class World{
 		}
 	}
 
-	public void populateDeer()
+	public void deerToWorld()
 	{
 		for(int i = 0; i < 30; i++)
 		{
@@ -105,7 +110,7 @@ public class World{
 		}
 	}
 	
-	public void populateGrasshopper()
+	public void grasshopperToWorld()
 	{
 		for(int i = 0; i < 30; i++)
 		{
@@ -116,7 +121,7 @@ public class World{
 		}
 	}
 
-	public void populateCaterpillar()
+	public void caterpillarToWorld()
 	{
 		for(int i = 0; i < 30; i++)
 		{
@@ -127,7 +132,7 @@ public class World{
 		}
 	}
 
-	public void populateGrass()
+	public void grassToWorld()
 	{
 		for(int i = 0; i < 60; i++)
 		{
@@ -138,7 +143,7 @@ public class World{
 		}
 	}
 
-	public void populateTreesShrubs()
+	public void treesShrubsToWorld()
 	{
 		for(int i = 0; i < 60; i++)
 		{
@@ -149,13 +154,14 @@ public class World{
 		}
 	}
 
+	//Printing the world to the console, using the print function from Location
 	public void printWorld()
 	{
 		for(int i = 0; i < squareKM; i++)
 		{
 			for(int j = 0; j < squareKM; j++)
 			{
-				//Have to call another print function to be able to get the type of animal and fauna through the list
+				//Have to call another print function to be able to get the type of animal and flora through the list
 				environment[i][j].print(i, j);
 			}
 		}

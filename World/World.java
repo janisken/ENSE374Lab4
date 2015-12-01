@@ -62,7 +62,7 @@ public class World{
 			Random rInt = new Random();
 			int x = rInt.nextInt(150);
 			int y = rInt.nextInt(150);
-			environment[x][y].addHawk(3);
+			environment[x][y].addRabbit(3);
 		}
 	}
 

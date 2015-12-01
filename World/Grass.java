@@ -2,8 +2,8 @@ import java.util.*;
 
 public class Grass extends Flora{
 	
-	public Grass(int canBeEaten)
+	public Grass(int canBeEaten, int xCoor, int yCoor)
 	{
-		super("Grass", canBeEaten); 
+		super("Grass", canBeEaten, xCoor, yCoor); 
 	}
 }

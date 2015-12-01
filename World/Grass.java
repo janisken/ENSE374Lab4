@@ -1,9 +1,9 @@
 import java.util.*;
 
-public class Grass extends Animals{
+public class Grass extends Flora{
 	
-	public Grass(int canMove)
+	public Grass(int canBeEaten)
 	{
-		super("Grass", canMove); 
+		super("Grass", canBeEaten); 
 	}
 }

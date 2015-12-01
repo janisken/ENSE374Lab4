@@ -25,7 +25,7 @@ public class Main{
 		newWorld.printWorld();
 
 		//Making all of the Animals move
-		newWorld.moveAllAnimals()
+		newWorld.moveAnimals()
 
 		//Printing out the world onto the console
 		newWorld.printWorld();

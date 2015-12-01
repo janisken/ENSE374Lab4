@@ -1,3 +1,5 @@
+import java.util.*;
+
 public class Animals{
 	
 	//Moved and canMove function for when the animals will move in the world

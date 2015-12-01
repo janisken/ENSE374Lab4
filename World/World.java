@@ -139,7 +139,7 @@ public class World{
 			Random rInt = new Random();
 			int x = rInt.nextInt(150);
 			int y = rInt.nextInt(150);
-			environment[x][y].addGrass(0);
+			environment[x][y].addGrass(15);
 		}
 	}
 
@@ -150,7 +150,7 @@ public class World{
 			Random rInt = new Random();
 			int x = rInt.nextInt(150);
 			int y = rInt.nextInt(150);
-			environment[x][y].addTreesShrubs(0);
+			environment[x][y].addTreesShrubs(15);
 		}
 	}
 

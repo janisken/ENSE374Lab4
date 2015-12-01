@@ -153,6 +153,18 @@ public class World{
 			environment[x][y].addTreesShrubs(15, x, y);
 		}
 	}
+	
+	public void moveAnimals()
+	{
+		for(int i = 0; i < squareKM; i++)
+		{
+			for(int j = 0; j < squareKM; j++)
+			{
+				//Have to call another print function to be able to get the type of animal and flora through the list
+				environment[i][j].moveAllAnimals();
+			}
+		}
+	}
 
 	//Printing the world to the console, using the print function from Location
 	public void printWorld()

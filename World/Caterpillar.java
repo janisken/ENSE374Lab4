@@ -2,8 +2,8 @@ import java.util.*;
 
 public class Caterpillar extends Animals{
 	
-	public Caterpillar(int canMove)
+	public Caterpillar(int canMoveint, int x, int y)
 	{
-		super("Caterpillar", canMove);
+		super("Caterpillar", canMoveint, x, y);
 	}
 }

@@ -9,15 +9,15 @@ public class Location{
 	private ArrayList <Flora> fList = new ArrayList <Flora>();
 	
 	//Adders for each of the flora, with the array add, called with a constructor
-	public void addGrass(int canBeEaten)
+	public void addGrass(int canBeEaten, int x, int y)
 	{
-		fList.add(new Grass(canBeEaten));
+		fList.add(new Grass(canBeEaten, x, y));
 		return;
 	}
 
-	public void addTreesShrubs(int canBeEaten)
+	public void addTreesShrubs(int canBeEaten, int x, int y)
 	{
-		fList.add(new TreesShrubs(canBeEaten));
+		fList.add(new TreesShrubs(canBeEaten, x, y));
 		return;
 	}
 	

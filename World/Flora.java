@@ -8,16 +8,24 @@ public class Flora{
 	//canBeEaten used so that plants hold a certain amount of food
 	private int canBeEaten;
 
+	//coordinates of each plant
+	private int xCoordinate;
+	private int yCoordinate;
+
 	//Flora initial constructor
 	public Flora()
 	{
+		xCoordinate = 0;
+		yCoordinate = 0;
 		floraType = "";
 		canBeEaten = 0;
 	}
 
 	//Flora constructor that assigns the type of flora
-	public Flora(String type, int foodAmount)
+	public Flora(String type, int foodAmount, int xCoor, int yCoor)
 	{
+		xCoordinate = xCoor;
+		yCoordinate = yCoor;
 		floraType = type;
 		canBeEaten = foodAmount;
 	}
@@ -45,6 +53,28 @@ public class Flora{
 	public void setCanBeEaten(int foodAmount)
 	{
 		canBeEaten = foodAmount;
+		return;
+	}
+	
+		public int getXCoordinate()
+	{
+		return xCoordinate;
+	}
+
+	public void setXCoordinate(int xCoor)
+	{
+		xCoordinate = xCoor;
+		return;
+	}
+
+	public int getYCoordinate()
+	{
+		return yCoordinate;
+	}
+
+	public void setYCoordinate(int yCoor)
+	{
+		yCoordinate = yCoor;
 		return;
 	}
 }

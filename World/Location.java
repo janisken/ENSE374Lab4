@@ -81,22 +81,6 @@ public class Location{
 		aList.add(new Wolf(x, y));
 		return;
 	}
-	
-	public void moveAnimals()
-	{
-		for (Animals tempList : aList)
-		{
-			tempList.moveAnimal();
-		}
-	}
-	
-	public void deleteAnimals()
-	{
-		for (Animals tempList : aList)
-		{
-			tempList.deleteAnimal();
-		}
-	}
 
 	//Print function, taking the list from all the animals and getting the correct type
 	public void print(int i, int j)

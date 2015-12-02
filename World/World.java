@@ -153,19 +153,6 @@ public class World{
 			environment[x][y].addTreesShrubs(15, x, y);
 		}
 	}
-	
-	public void moveAllAnimals()
-	{
-		for(int i = 0; i < squareKM; i++)
-		{
-			for(int j = 0; j < squareKM; j++)
-			{
-				environment[i][j].moveAnimals();
-				environment[x][y].reAddAnimals();
-				environment[i][j].deleteAnimals();
-			}
-		}
-	}
 
 	//Printing the world to the console, using the print function from Location
 	public void printWorld()

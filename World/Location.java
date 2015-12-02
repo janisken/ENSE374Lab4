@@ -9,83 +9,82 @@ public class Location{
 	private ArrayList <Flora> fList = new ArrayList <Flora>();
 	
 	//Adders for each of the flora, with the array add, called with a constructor
-	public void addGrass(int canBeEaten, int xCoor, int yCoor)
+	public void addGrass(int canBeEaten, int x, int y)
 	{
-		fList.add(new Grass(canBeEaten, xCoor, yCoor));
+		fList.add(new Grass(canBeEaten, x, y));
 		return;
 	}
 
-	public void addTreesShrubs(int canBeEaten, int xCoor, int yCoor)
+	public void addTreesShrubs(int canBeEaten, int x, int y)
 	{
-		fList.add(new TreesShrubs(canBeEaten, xCoor, yCoor));
+		fList.add(new TreesShrubs(canBeEaten, x, y));
 		return;
 	}
 	
 	//Adders for each of the animals, with the array add, called with a constructor
-	public void addCaterpillar(int canMove, int xCoor, int yCoor)
+	public void addCaterpillar(int x, int y)
 	{
-		aList.add(new Caterpillar(canMove, xCoor, yCoor));
+		aList.add(new Caterpillar(x, y));
 		return;
 	}
 
-	public void addGrasshopper(int canMove, int xCoor, int yCoor)
+	public void addGrasshopper(int x, int y)
 	{
-		aList.add(new Grasshopper(canMove, xCoor, yCoor));
+		aList.add(new Grasshopper(x, y));
 		return;
 	}
 
-	public void addDeer(int canMove, int xCoor, int yCoor)
+	public void addDeer(int x, int y)
 	{
-		aList.add(new Deer(canMove, xCoor, yCoor));
+		aList.add(new Deer(x, y));
 		return;
 	}
 
-	public void addBluejay(int canMove, int xCoor, int yCoor)
+	public void addBluejay(int x, int y)
 	{
-		aList.add(new Bluejay(canMove, xCoor, yCoor));
+		aList.add(new Bluejay(x, y));
 		return;
 	}
 
-	public void addSquirrel(int canMove, int xCoor, int yCoor)
+	public void addSquirrel(int x, int y)
 	{
-		aList.add(new Squirrel(canMove, xCoor, yCoor));
+		aList.add(new Squirrel(x, y));
 		return;
 	}
 
-	public void addMouse(int canMove, int xCoor, int yCoor)
+	public void addMouse(int x, int y)
 	{
-		aList.add(new Mouse(canMove, xCoor, yCoor));
+		aList.add(new Mouse(x, y));
 		return;
 	}
 
-	public void addRabbit(int canMove, int xCoor, int yCoor)
+	public void addRabbit(int x, int y)
 	{
-		aList.add(new Rabbit(canMove, xCoor, yCoor));
+		aList.add(new Rabbit(x, y));
 		return;
 	}
 
-	public void addHawk(int canMove, int xCoor, int yCoor)
+	public void addHawk(int x, int y)
 	{
-		aList.add(new Hawk(canMove, xCoor, yCoor));
+		aList.add(new Hawk(x, y));
 		return;
 	}
 
-	public void addFox(int canMove, int xCoor, int yCoor)
+	public void addFox(int x, int y)
 	{
-		aList.add(new Fox(canMove, xCoor, yCoor));
+		aList.add(new Fox(x, y));
 		return;
 	}
 
-	public void addWolf(int canMove, int xCoor, int yCoor)
+	public void addWolf(int x, int y)
 	{
-		aList.add(new Wolf(canMove, xCoor, yCoor));
+		aList.add(new Wolf(x, y));
 		return;
 	}
 	
-	//moves all of the animals using the moveAnimal function in the Animals class
-	public void moveAllAnimals()
+	public void moveAnimals()
 	{
-		for (Animals tempList : list)
+		for (Animals tempList : aList)
 		{
 			tempList.moveAnimal();
 		}

@@ -2,9 +2,10 @@ import java.util.*;
 
 public class Animals{
 	
-	//Moved and canMove function for when the animals will move in the world
+	//Moved, canMove, stillMove function for when the animals will move in the world
 	private int moved;
 	private int canMove;
+	private int stillMove;
 	
 	//x and y Coordinates are used to move the animals, whether to the left or right, up or down on the map
 	private int xCoordinate;
@@ -24,6 +25,7 @@ public class Animals{
 		yCoordinate = 0;
 		moved = 0;
 		canMove = 0;
+		stillMove = 0;
 		moveDirection = 0;
 		animalType = "";
 	}
@@ -36,6 +38,7 @@ public class Animals{
 		canMove = animalCanMove;
 		moved = 0;
 		moveDirection = 0;
+		stillMove = animalCanMove;
 		animalType = type;
 	}
 
@@ -73,6 +76,17 @@ public class Animals{
 		return;
 	}
 	
+	public int getStillMove()
+	{
+		return stillMove;
+	}
+
+	public void setStillMove(int move)
+	{
+		stillMove = move;
+		return;
+	}
+	
 	public int getXCoordinate()
 	{
 		return xCoordinate;
@@ -94,24 +108,23 @@ public class Animals{
 		yCoordinate = yCoor;
 		return;
 	}
-
-	//selects which way the animal should move
-	//moves the animal in the direction set and puts them back in bounds if they go out
+	
 	public void moveAnimal()
 	{
 		Random rInt = new Random();
 		moved = rInt.nextInt(getCanMove());
 		moveDirection = rInt.nextInt(numOfDirections);
+		stillMove -= moved;
 
 		switch (moveDirection){
 			case 1: yCoordinate += moved;
-				break;
+					break;
 			case 2: yCoordinate -= moved;
-				break;
+					break;
 			case 3: xCoordinate += moved;
-				break;
+					break;
 			case 4: xCoordinate -= moved;
-				break;
+					break;
 			default: break;
 		}
 

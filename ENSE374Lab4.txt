@@ -1,9 +1,12 @@
+Running into lots of issues with my constructors, I was unable to finish this project as I spent countless hours trying to get my constructors
+restructured to work with the movement and eating. The diagram displays what was envisioned.
+
 3.1 Overview
 
 This software will create a virtual environment, in java language, in which animals will live within and interact with each other. External 
 forces cannot affect the system that is created, and there is no reproducing of any kind. Eventually, every animal will die. Each animal
 will be broken down into their respective animal categories, from animals with wings to without wings and insects. This is a new design that
-will run on a personal computer. 
+will run on a personal computer.
 
 
 3.2 Subsystem Decomposition

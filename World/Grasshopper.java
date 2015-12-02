@@ -1,9 +1,9 @@
 import java.util.*;
 
-public class Grasshopper extends Animals{
+public class Grasshopper extends Insects{
 	
-	public Grasshopper(int canMove)
+	public Grasshopper(int x, int y)
 	{
-		super("Grasshopper", canMove);
+		super("Grasshopper", x, y);
 	}
 }

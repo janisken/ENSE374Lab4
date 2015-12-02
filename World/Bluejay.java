@@ -1,9 +1,9 @@
 import java.util.*;
 
-public class Bluejay extends Animals{
+public class Bluejay extends AnimalsWithWings{
 	
-	public Bluejay(int canMove)
+	public Bluejay(int x, int y)
 	{
-		super("Bluejay", canMove);
+		super("Bluejay", x, y);
 	}
 }

@@ -22,63 +22,63 @@ public class Location{
 	}
 	
 	//Adders for each of the animals, with the array add, called with a constructor
-	public void addCaterpillar(int canMove)
+	public void addCaterpillar(int x, int y)
 	{
-		aList.add(new Caterpillar(canMove));
+		aList.add(new Caterpillar(x, y));
 		return;
 	}
 
-	public void addGrasshopper(int canMove)
+	public void addGrasshopper(int x, int y)
 	{
-		aList.add(new Grasshopper(canMove));
+		aList.add(new Grasshopper(x, y));
 		return;
 	}
 
-	public void addDeer(int canMove)
+	public void addDeer(int x, int y)
 	{
-		aList.add(new Deer(canMove));
+		aList.add(new Deer(x, y));
 		return;
 	}
 
-	public void addBluejay(int canMove)
+	public void addBluejay(int x, int y)
 	{
-		aList.add(new Bluejay(canMove));
+		aList.add(new Bluejay(x, y));
 		return;
 	}
 
-	public void addSquirrel(int canMove)
+	public void addSquirrel(int x, int y)
 	{
-		aList.add(new Squirrel(canMove));
+		aList.add(new Squirrel(x, y));
 		return;
 	}
 
-	public void addMouse(int canMove)
+	public void addMouse(int x, int y)
 	{
-		aList.add(new Mouse(canMove));
+		aList.add(new Mouse(x, y));
 		return;
 	}
 
-	public void addRabbit(int canMove)
+	public void addRabbit(int x, int y)
 	{
-		aList.add(new Rabbit(canMove));
+		aList.add(new Rabbit(x, y));
 		return;
 	}
 
-	public void addHawk(int canMove)
+	public void addHawk(int x, int y)
 	{
-		aList.add(new Hawk(canMove));
+		aList.add(new Hawk(x, y));
 		return;
 	}
 
-	public void addFox(int canMove)
+	public void addFox(int x, int y)
 	{
-		aList.add(new Fox(canMove));
+		aList.add(new Fox(x, y));
 		return;
 	}
 
-	public void addWolf(int canMove)
+	public void addWolf(int x, int y)
 	{
-		aList.add(new Wolf(canMove));
+		aList.add(new Wolf(x, y));
 		return;
 	}
 

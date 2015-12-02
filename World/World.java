@@ -29,7 +29,7 @@ public class World{
 			Random rInt = new Random();
 			int x = rInt.nextInt(150);
 			int y = rInt.nextInt(150);
-			environment[x][y].addWolf(3);
+			environment[x][y].addWolf(x, y);
 		}
 	}
 
@@ -40,7 +40,7 @@ public class World{
 			Random rInt = new Random();
 			int x = rInt.nextInt(150);
 			int y = rInt.nextInt(150);
-			environment[x][y].addFox(3);
+			environment[x][y].addFox(x, y);
 		}
 	}
 
@@ -51,7 +51,7 @@ public class World{
 			Random rInt = new Random();
 			int x = rInt.nextInt(150);
 			int y = rInt.nextInt(150);
-			environment[x][y].addHawk(5);
+			environment[x][y].addHawk(x, y);
 		}
 	}
 
@@ -62,7 +62,7 @@ public class World{
 			Random rInt = new Random();
 			int x = rInt.nextInt(150);
 			int y = rInt.nextInt(150);
-			environment[x][y].addRabbit(3);
+			environment[x][y].addRabbit(x, y);
 		}
 	}
 
@@ -73,7 +73,7 @@ public class World{
 			Random rInt = new Random();
 			int x = rInt.nextInt(150);
 			int y = rInt.nextInt(150);
-			environment[x][y].addMouse(3);
+			environment[x][y].addMouse(x, y);
 		}
 	}
 
@@ -84,7 +84,7 @@ public class World{
 			Random rInt = new Random();
 			int x = rInt.nextInt(150);
 			int y = rInt.nextInt(150);
-			environment[x][y].addSquirrel(3);
+			environment[x][y].addSquirrel(x, y);
 		}
 	}
 
@@ -95,7 +95,7 @@ public class World{
 			Random rInt = new Random();
 			int x = rInt.nextInt(150);
 			int y = rInt.nextInt(150);
-			environment[x][y].addBluejay(5);
+			environment[x][y].addBluejay(x, y);
 		}
 	}
 
@@ -106,7 +106,7 @@ public class World{
 			Random rInt = new Random();
 			int x = rInt.nextInt(150);
 			int y = rInt.nextInt(150);
-			environment[x][y].addDeer(3);
+			environment[x][y].addDeer(x, y);
 		}
 	}
 	
@@ -117,7 +117,7 @@ public class World{
 			Random rInt = new Random();
 			int x = rInt.nextInt(150);
 			int y = rInt.nextInt(150);
-			environment[x][y].addGrasshopper(1);
+			environment[x][y].addGrasshopper(x, y);
 		}
 	}
 
@@ -128,7 +128,7 @@ public class World{
 			Random rInt = new Random();
 			int x = rInt.nextInt(150);
 			int y = rInt.nextInt(150);
-			environment[x][y].addCaterpillar(1);
+			environment[x][y].addCaterpillar(x, y);
 		}
 	}
 
